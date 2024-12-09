@@ -1,7 +1,11 @@
 ## IO流
 ### 概论
 
-![alt text](image-9.png)
+**输入和输出是相对内存来说的**
+输出流是写到硬盘中去
+输入流是读到内存中来
+
+![alt text](img2/image-9.png)
 
 java 流在处理上分为字符流和字节流。
 - 实际上字节流的InputStream和OutputStream是一切的基础。**实际总线中流动的只有字节流**。
@@ -13,7 +17,7 @@ java 流在处理上分为字符流和字节流。
 
 需要对字节流做特殊解码才能得到字符流。
 
-![alt text](image-10.png)
+![alt text](img2/image-10.png)
 
 **字节流在默认情况下是不支持缓存的，字节流在操作时本身不会用到缓冲区，是文件本身直接操作。**
 <br>
@@ -129,14 +133,14 @@ java 流在处理上分为字符流和字节流。
 
 ### 缓冲流
 
-![alt text](image-11.png)
+![alt text](img2/image-11.png)
 正如前面提到的，字节流在默认情况下是不支持缓存的，字节流在操作时本身不会用到缓冲区（内存），是文件本身直接操作的，这意味着每调用一次read方法，都会请求操作系统来读取一个字节，这往往会伴随着一次磁盘IO，因此效率会比较低。要使用内存缓冲区来提高读取的效率，我们应该使用**BufferedInputStream**
 
-![alt text](image-12.png)
+![alt text](img2/image-12.png)
 
-![alt text](image-13.png)
+![alt text](img2/image-13.png)
 
-![alt text](image-14.png)
+![alt text](img2/image-14.png)
 
 ### 一些练习
 
